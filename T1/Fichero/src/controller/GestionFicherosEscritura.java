@@ -35,6 +35,7 @@ public class GestionFicherosEscritura {
 
 
         } catch (IOException e) {
+            //87898
 
             System.out.println("Error en la escritura del fichero, por permisos");
         } finally {

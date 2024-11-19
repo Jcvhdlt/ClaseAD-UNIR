@@ -16,7 +16,7 @@ public class GestorFicherosConjuntos {
         System.out.println("Por favor indica la fase de cifrado del mensaje");
         int fase = scanner.nextInt();
         //este es el contenido del examen
-
+ //
         try {
             fileWriter = new FileWriter(file,false);
             for (int i = 0; i < mensaje.length(); i++) {
