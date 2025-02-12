@@ -22,7 +22,15 @@ import java.util.List;
 
 @Entity
 @Table (name = "empleados")
+
+/* Requisitos que debe cumplir las clases de un modelo (model):
+- todos los atributos privados
+- constructor con todo y vacio
+- clase debe ser serializable
+- getters y setters
+* */
 public class Trabajador implements Serializable {
+
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -72,6 +80,8 @@ public class Trabajador implements Serializable {
     public Trabajador(int id) {
         this.id = id;
     }
+
+
 
     @Override
     public String toString() {

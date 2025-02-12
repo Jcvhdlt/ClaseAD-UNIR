@@ -16,7 +16,7 @@ public class Entrada {
         // FORM
 
         // pedir datos y hacer la logica -> UNIQUE
-        /*try {
+        try {
             if (!usuarioDAO.insertUser(new Usuario("Borja","Martin","borja@correo.com","1234"))){
                 System.out.println("Usuario insertado con exito");
             } else {
@@ -25,9 +25,9 @@ public class Entrada {
         } catch (SQLException e) {
             System.out.println(e.getMessage());
             System.out.println("Error en la ejecucion. Es posible que el correo ya exista, quieres volver a probar");
-        }*/
+        }
 
-        /*try {
+        try {
             // 0
             Scanner scanner = new Scanner(System.in);
             System.out.println("Indica el correo que quieres borrar");
@@ -36,16 +36,16 @@ public class Entrada {
             System.out.println("El numero de registros borrados es de "+deleteRows);
         } catch (SQLException e) {
             System.out.println("error en la ejecucion");
-        }*/
+        }
 
-        /*try {
+        try {
             for ( Usuario item : usuarioDAO.getAllUsers() ) {
                 // JAVAMAIL
                 item.getCorreo();
             }
         } catch (SQLException e) {
             System.out.println("Error en la ejecucion");
-        }*/
+        }
 
         boolean login = false;
         boolean bloqueo = false;

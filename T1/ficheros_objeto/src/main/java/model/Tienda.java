@@ -19,6 +19,7 @@ public class Tienda implements Serializable {
     private int empleados;
     // ATRIBUTO
 
+
     public Tienda(String nombre, int id) {
         this.nombre = nombre;
         this.id = id;

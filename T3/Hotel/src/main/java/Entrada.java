@@ -18,7 +18,7 @@ import java.util.Scanner;
 public class Entrada {
     public static void main(String[] args) {
         // insercion -> insert
-        /*Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         SessionFactory sessionFactory = new HibernateUtil().getSessionFactory();
         Session session = sessionFactory.getCurrentSession();
         session.beginTransaction();
@@ -26,9 +26,9 @@ public class Entrada {
         session.persist(
                 new Trabajador(scanner.next(),scanner.next(),scanner.next(),scanner.nextInt()));
         session.getTransaction().commit();
-        session.close();*/
+        session.close();
         // obtencion -> select - ps, rs
-        /*
+/*
         rs = ps.execute()
         while(rs.next()){
         String n = rs.getString(CASAD.asdasd)
@@ -37,17 +37,19 @@ public class Entrada {
         String t = rs.getString(CASAD.asdasd)
         Trabajador t = new Trabajador(n,a,d,t)
         }
-         */
-        /*
+        */
+
+
+
         SessionFactory sessionFactory = new HibernateUtil().getSessionFactory();
         Session session = sessionFactory.getCurrentSession();
         session.beginTransaction();
         Trabajador t = session.get(Trabajador.class,1);
         session.getTransaction().commit();
-        System.out.println(t);
-        session.close();*/
+        System.out.println(t.getNombre());
+        session.close();
         // actualizacion
-        /*SessionFactory sessionFactory = new HibernateUtil().getSessionFactory();
+        SessionFactory sessionFactory = new HibernateUtil().getSessionFactory();
         Session session = sessionFactory.getCurrentSession();
         session.beginTransaction();
         Trabajador trabajador = session.get(Trabajador.class,3);
@@ -58,7 +60,7 @@ public class Entrada {
         session.getTransaction().commit();
         session.close();*/
         // borrado
-        /*
+
         SessionFactory sessionFactory = new HibernateUtil().getSessionFactory();
         Session session = sessionFactory.getCurrentSession();
         session.beginTransaction();
@@ -68,7 +70,7 @@ public class Entrada {
         session.getTransaction().commit();
         session.close();*/
         // seleccion avanzada
-        /*SessionFactory sessionFactory = new HibernateUtil().getSessionFactory();
+        SessionFactory sessionFactory = new HibernateUtil().getSessionFactory();
         Session session = sessionFactory.getCurrentSession();
         session.beginTransaction();
         // t nomeglqtura para un trabajador
@@ -79,7 +81,7 @@ public class Entrada {
             System.out.println(trabajador);
         }
         session.getTransaction().commit();
-        session.close();*/
+        session.close();
 
         TrabajadorDAO trabajadorDAO = new TrabajadorDAO();
         // trabajadorDAO.seleccionHabitacionTrabajador(33);
